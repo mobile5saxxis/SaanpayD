@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.saxxis.saanpaydestributor.activities.payment.KYCUploadActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/kyctoolbar"
+                app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+        </android.support.design.widget.AppBarLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/title">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:textColor="@color/colorchange"
+                android:hint="Title"
+                android:textColorHint="@color/colorchange"
+                android:inputType="text"
+                android:layout_marginTop="10dp"
+                android:id="@+id/ettitle"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleidnumber">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:textColor="@color/colorchange"
+                android:hint="Id number"
+                android:textColorHint="@color/colorchange"
+                android:inputType="number"
+                android:id="@+id/ettitleidnumber"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/titledocumentationIv"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshape"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:text="Upload Document"
+            android:id="@+id/upload_btn"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/filesTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <!--<android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/panno">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:textColor="@color/colorchange"
+                android:hint="PAN"
+                android:textColorHint="@color/colorchange"
+                android:inputType="number|text"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/etpanno"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/voteridentitycard">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:textColor="@color/colorchange"
+                android:hint="Voter Id"
+                android:textColorHint="@color/colorchange"
+                android:inputType="number|text"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/etvoteridentitycard"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/drivinglicence">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:textColor="@color/colorchange"
+                android:hint="Driving license"
+                android:textColorHint="@color/colorchange"
+                android:inputType="number|text"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/etdrivinglicence"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/passport">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:textColor="@color/colorchange"
+                android:hint="Passport"
+                android:textColorHint="@color/colorchange"
+                android:inputType="number|text"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/etpassport"/>
+
+        </android.support.design.widget.TextInputLayout>-->
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshape"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:text="Submit"
+            android:id="@+id/submit_btn"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.saxxis.saanpaydestributor.activities.leftmenu.ReferralActivity"
+    tools:showIn="@layout/activity_referral">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="16sp"
+        android:layout_margin="15dp"
+        android:text="Refer and Earn Money"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:text="Friend Joins,Friend earns Rs 100" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:text="Friend Joined,you earn Rs 50" />
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/colorGray"
+       android:padding="15dp"
+       android:layout_margin="10dp"
+       android:orientation="vertical">
+
+       <TextView
+
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center_horizontal"
+           android:textSize="14sp"
+           android:layout_marginTop="5dp"
+           android:text="Your Referral Code" />
+
+       <TextView
+
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center_horizontal"
+           android:textSize="24sp"
+           android:layout_marginTop="10dp"
+           android:textStyle="bold"
+           android:id="@+id/referraL_id"
+           android:textColor="@color/colorPrimary"
+           android:text="MIX0546321" />
+
+       <Button
+           style="@style/Widget.AppCompat.Button.Borderless"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           android:layout_margin="20dp"
+           android:minWidth="180dp"
+           android:background="@color/colorPrimary"
+           android:textColor="@color/colorWhite"
+           android:text="Share"
+           android:textAllCaps="false"
+           android:id="@+id/btn_share"/>
+
+
+   </LinearLayout>
+</LinearLayout>

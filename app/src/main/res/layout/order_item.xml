@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="5dp">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/order_item_title"
+           android:layout_alignParentStart="true"
+           android:layout_alignParentLeft="true"
+           android:text="Order No:"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/order_item_value"
+           android:layout_toRightOf="@id/order_item_title"
+           android:layout_toEndOf="@id/order_item_title"
+           android:layout_marginLeft="5dp"
+           android:layout_marginStart="5dp"
+           android:textColor="@color/colorBlack"
+           android:text="123456789"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/order_item_amount"
+           android:layout_alignParentEnd="true"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="10dp"
+           android:layout_marginEnd="10dp"
+           android:textColor="@color/colorBlack"
+           android:text="Rs 150"/>
+
+   </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/order_item_time"
+        android:padding="5dp"
+        android:text="09/03/2017 07:00:00"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/order_item_number"
+                android:textColor="@color/colorBlack"
+                android:text="9876543210"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/order_item_Operator"
+            android:textColor="@color/colorGrayDark"
+            android:layout_marginTop="2dp"
+            android:text="Idea"/>
+
+
+</LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:id="@+id/order_item_status"
+            android:textSize="12dp"
+            android:minWidth="75dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/order_status_box"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Success"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="wrap_content"
+            android:id="@+id/help"
+            android:textSize="12dp"
+            android:minWidth="75dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/order_status_box"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:text="Help"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGray"/>
+
+
+
+
+</LinearLayout>

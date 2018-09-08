@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.saxxis.saanpaydestributor.activities.payment.SendMoneyActivity"
+    tools:showIn="@layout/activity_send_money">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="60dp"-->
+                <!--android:layout_height="60dp"-->
+                <!--android:src="@drawable/rec_sen"/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="@color/colorBlack"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textSize="14sp"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:text="Transfer Money to your Bank"/>-->
+        <!--</LinearLayout>-->
+
+        <!--<Button-->
+            <!--android:id="@+id/add_bene"-->
+            <!--style="@style/Widget.AppCompat.Button.Borderless"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:background="@color/colorPrimary"-->
+            <!--android:minWidth="200dp"-->
+            <!--android:text="Add Beneficiary"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:textColor="@color/colorBlack"-->
+            <!--android:textSize="16sp" />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorGray">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="@color/colorBlack"
+                android:text="Mobile Number"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:inputType="phone"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/sendmone_bg"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="@color/colorBlack"
+                android:text="Beneficiary Name*"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:inputType="text"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:maxLines="1"
+                android:background="@drawable/sendmone_bg"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="@color/colorBlack"
+                android:text="Beneficiary Account No*"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:inputType="number"
+                android:textSize="14sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/sendmone_bg"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="@color/colorBlack"
+                android:text="Beneficiary IFSC Code*"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/sendmone_bg"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:inputType="text"
+                    android:textSize="14sp"
+                    android:background="@color/transparent"
+                    android:layout_weight="1"
+                    android:maxLines="1"/>
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textColor="@color/colorBlack"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:text="Search IFSC"/>-->
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="@color/colorBlack"
+                android:text="Beneficiary Bank Name*"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:inputType="text"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:maxLines="1"
+                android:textSize="14sp"
+                android:background="@drawable/sendmone_bg"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="@color/colorBlack"
+                android:text="Beneficiary Bank *"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:inputType="text"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:maxLines="1"
+                android:id="@+id/bank_id"
+                android:textSize="14sp"
+                android:drawableEnd="@drawable/dropdown"
+                android:drawableRight="@drawable/dropdown"
+                android:background="@drawable/sendmone_bg"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btn_money"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:background="@color/colorBlueGroup"
+                android:padding="5dp"
+                android:text="Transfer Money"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+

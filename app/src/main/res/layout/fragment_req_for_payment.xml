@@ -1,0 +1,283 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.saxxis.saanpaydestributor.fragments.ReqForPaymentFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/accountHolderNameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account holder name"
+            android:textColor="@color/colorGrayDark"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/accountHolderNameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:inputType="text"
+            android:maxLines="1" />
+
+        <View
+            android:id="@+id/accountHolderNameLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorGray" />
+
+        <TextView
+            android:id="@+id/accountNumberTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account number"
+            android:textColor="@color/colorGrayDark"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/accountNumberET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:inputType="number"
+            android:maxLines="1" />
+
+        <View
+            android:id="@+id/accountNumberLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorGray" />
+
+        <TextView
+            android:id="@+id/nameofbankTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name of the Bank"
+            android:textColor="@color/colorGrayDark"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/nameofbankET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:inputType="text"
+            android:maxLines="1" />
+
+        <View
+            android:id="@+id/nameofbankLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorGray" />
+
+
+        <TextView
+            android:id="@+id/checkNumberTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cheque Number"
+            android:textColor="@color/colorGrayDark"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/checkNumberET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:inputType="number"
+            android:maxLines="1" />
+
+        <View
+            android:id="@+id/checkNumberLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorGray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reference Number"
+            android:textColor="@color/colorGrayDark"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/referenceNumberET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:inputType="number"
+            android:maxLines="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorGray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Amount"
+            android:textColor="@color/colorGrayDark"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/amountEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:inputType="number"
+            android:maxLines="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorGray" />
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:text="Date"-->
+        <!--android:textColor="@color/colorGrayDark"-->
+        <!--android:textSize="12sp" />-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/dateET"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@android:color/transparent"-->
+        <!--android:inputType="text"-->
+        <!--android:maxLines="1" />-->
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_marginBottom="5dp"-->
+        <!--android:background="@color/colorGray" />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Deposited Bank"
+            android:textColor="@color/colorGrayDark"
+            android:textSize="12sp" />
+
+        <!--<EditText-->
+        <!--android:id="@+id/depositedbankET"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@android:color/transparent"-->
+        <!--android:inputType="text"-->
+        <!--android:maxLines="1" />-->
+
+        <Spinner
+            android:id="@+id/depositedbankET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorGray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Pick date and time"
+            android:textColor="@color/colorGrayDark"
+            android:textSize="12sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/date"
+                android:drawablePadding="5dp"
+                android:padding="8dp"
+                android:text="Date" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/time"
+                android:drawablePadding="5dp"
+                android:padding="8dp"
+                android:text="Time" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Receipt:"
+            android:textColor="@color/colorGrayDark"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/browse"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:background="@drawable/border_btn"
+                android:text="Browse"
+                android:textColor="@color/colorGrayDark" />
+
+            <TextView
+                android:id="@+id/imageName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/profile_btn_save"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorchange"
+            android:minWidth="180dp"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</FrameLayout>

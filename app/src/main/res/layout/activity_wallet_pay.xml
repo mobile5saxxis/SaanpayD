@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.saxxis.saanpaydestributor.activities.leftmenu.WalletPayActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txt_walletbalance"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/buttonshape"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="Available Balance &#8377; 0"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tipl_paidmobileno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/txtpaid_mobileno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="mobile no"
+                        android:maxLength="10"
+                        android:inputType="phone"
+                        android:lines="1"
+                        android:maxLines="1" />
+
+                    <ImageView
+                        android:id="@+id/contact"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/phonebook" />
+
+                </RelativeLayout>
+
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"
+                android:textColor="@color/colorchange"
+                android:text="User name: "
+                android:textSize="17dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tipl_paidamount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txtpaid_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Amount"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLines="1" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tipl_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="visible">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txtpaid_descripetion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Description"
+                    android:inputType="textCapWords"
+                    android:lines="1"
+                    android:maxLines="1" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/payamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/buttonshape"
+                android:ems="5"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Pay"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

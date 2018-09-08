@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.saxxis.saanpaydestributor.activities.payment.AddMoneyActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/addmoneytoolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Amount"-->
+        <!--android:textColor="@color/colorchange" />-->
+
+        <TextView
+            android:id="@+id/txt_walletbalance"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonshape"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="Available Balance &#8377; 0"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tinplay_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/add_money_et_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Amount (&#8377;)"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textColor="@color/colorchange"
+                android:textColorHint="@color/colorchange" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/txt_1000"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/add_money_bg"
+                android:gravity="center"
+                android:maxWidth="70dp"
+                android:padding="10dp"
+                android:text="1000"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/txt_500"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/add_money_bg"
+                android:gravity="center"
+                android:maxWidth="70dp"
+                android:padding="10dp"
+                android:text="500"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/txt_100"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/add_money_bg"
+                android:gravity="center"
+                android:maxWidth="70dp"
+                android:padding="10dp"
+                android:text="100"
+                android:textColor="@color/colorBlack" />
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/add_money_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/buttonshape"
+            android:text="Add Money"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Comming soon"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom"
+        android:background="@color/mainTabColor"
+        app:tabGravity="center"
+        app:tabIndicatorColor="@color/colorWhite"
+        app:tabIndicatorHeight="2dp" />
+
+</android.support.design.widget.CoordinatorLayout>

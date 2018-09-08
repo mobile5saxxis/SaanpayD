@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.saxxis.saanpaydestributor.activities.CompleteAddMoneyActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/paytoaddmoneytoolbar"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Payment methods"
+            android:textColor="@color/colorchange"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/colorGrayDark"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:padding="5dp"
+            android:id="@+id/addmoney_creditpay"
+            android:textColor="@color/colorchange"
+            android:textSize="14sp"
+            android:gravity="left|center_vertical"
+            android:drawableRight="@drawable/nexticon"
+            android:drawableEnd="@drawable/nexticon"
+            android:text="  Credit Card"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/colorGrayDark"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:padding="5dp"
+            android:drawableRight="@drawable/nexticon"
+            android:drawableEnd="@drawable/nexticon"
+            android:id="@+id/addmoney_debitcard"
+            android:textColor="@color/colorchange"
+            android:textSize="14sp"
+            android:gravity="left|center_vertical"
+            android:text="  Debit Card"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/colorchange"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:padding="5dp"
+            android:id="@+id/addmoney_netbanking"
+            android:textColor="@color/colorchange"
+            android:textSize="14sp"
+            android:gravity="left|center_vertical"
+            android:drawableRight="@drawable/nexticon"
+            android:drawableEnd="@drawable/nexticon"
+            android:text="  Net Banking"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/colorGrayDark"/>
+
+    </LinearLayout>
+</LinearLayout>

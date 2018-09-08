@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.saxxis.saanpaydestributor.activities.CompletePaymentActivity"
+    tools:showIn="@layout/activity_complete_payment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/colorBlack"
+            android:text="Total amount to be Paid"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/to_be_paid"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/walletlayout"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/chck_wallet"
+                android:checked="true"
+                android:text="Use Wallet"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGrayDark"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:id="@+id/current_balance"
+                android:text="(Your Current Balance is Rs: 64)"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGrayDark"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/use_wallet_amount"
+            android:visibility="gone"
+            android:text="- Rs 64"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingRight="10dp"
+            android:text="UnCheck (Use Wallet) to pay using other options"/>
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="10dp"
+            android:text="Select an option to pay balance"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:id="@+id/remaining_amount"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorGrayDark"/>
+
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorchange"
+        android:padding="5dp"
+        android:text="Pay Now"
+        android:id="@+id/complete_payment"
+        android:textColor="@android:color/white" />
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorchange"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp"
+        android:text="Pay Now"
+        android:id="@+id/addamount"
+        android:visibility="gone"
+        android:textColor="@android:color/white" />
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--style="@style/Widget.AppCompat.Button.Borderless"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:padding="10dp"-->
+        <!--android:id="@+id/trx_walletpay"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="16sp"-->
+        <!--android:text="Wallet Pay"-->
+        <!--android:background="@color/colorchange"/>-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/other_payment_options"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Payment methods"
+        android:textColor="@color/colorchange"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/colorGrayDark"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:padding="5dp"
+        android:id="@+id/trx_creditpay"
+        android:textColor="@color/colorchange"
+        android:textSize="14sp"
+        android:gravity="left|center_vertical"
+        android:drawableRight="@drawable/nexticon"
+        android:drawableEnd="@drawable/nexticon"
+        android:text="  Credit Card"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/colorGrayDark"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:padding="5dp"
+        android:drawableRight="@drawable/nexticon"
+        android:drawableEnd="@drawable/nexticon"
+        android:id="@+id/trx_debitcard"
+        android:textColor="@color/colorchange"
+        android:textSize="14sp"
+        android:gravity="left|center_vertical"
+        android:text="  Debit Card"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/colorchange"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:padding="5dp"
+        android:id="@+id/trx_netbanking"
+        android:textColor="@color/colorchange"
+        android:textSize="14sp"
+        android:gravity="left|center_vertical"
+        android:drawableRight="@drawable/nexticon"
+        android:drawableEnd="@drawable/nexticon"
+        android:text="  Net Banking"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/colorGrayDark"/>
+
+    </LinearLayout>
+</LinearLayout>

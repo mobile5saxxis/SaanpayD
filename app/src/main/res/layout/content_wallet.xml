@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.saxxis.saanpaydestributor.activities.leftmenu.WalletActivity"
+    tools:showIn="@layout/activity_wallet">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textColor="@color/colorchange"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:drawablePadding="10dp"
+            android:text="Available Balance" />
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <ProgressBar
+                android:id="@+id/loading_wallet"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorchange"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:id="@+id/wallet_balance" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Money"
+            android:minWidth="150dp"
+            android:padding="15dp"
+            android:textColor="@color/colorchange"
+            android:textSize="16sp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/add_money_bg"
+            android:layout_margin="10dp"
+            android:id="@+id/wallet_add_money"/>
+
+    </LinearLayout>
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:textColor="@color/colorBlack"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textSize="16sp"-->
+        <!--android:padding="10dp"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:text="Transactions" />-->
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/colorGray"/>-->
+
+</LinearLayout>

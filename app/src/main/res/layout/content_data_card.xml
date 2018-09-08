@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.saxxis.saanpaydestributor.activities.recharge.DataCardActivity"
+    tools:showIn="@layout/activity_data_card">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_marginBottom="5dp"-->
+        <!--android:orientation="horizontal">-->
+        <!--<ImageView-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_marginRight="5dp"-->
+        <!--android:src="@drawable/dc"/>-->
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/enter_dc_num"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:textAppearance="@style/TextAppearance.AppCompat.Button"-->
+        <!--android:textColor="@color/colorPrimaryDark"-->
+        <!--android:textSize="16sp" />-->
+        <!--</LinearLayout>-->
+
+
+        <RadioGroup
+            android:id="@+id/rgv_prepostpaid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <RadioButton
+                android:id="@+id/rb_prepaid"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/prepaid"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rb_postpaid"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/postpaid"
+                android:textSize="16sp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Enter Data Card No"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/dc_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:inputType="phone"
+            android:maxLength="13"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/contact"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/phonebook" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorGray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/operaters"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:textColor="@color/colorPrimaryDark"-->
+            <!--android:textAppearance="@style/TextAppearance.AppCompat.Button"/>-->
+
+            <TextView
+                android:id="@+id/dc_operator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableEnd="@drawable/dropdown"
+                android:drawableRight="@drawable/dropdown"
+                android:padding="10dp"
+                android:text="Select Operator"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorGray" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_marginStart="10dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:drawableStart="@drawable/rupee"-->
+            <!--android:drawableLeft="@drawable/rupee"-->
+            <!--android:textColor="@color/colorPrimaryDark"-->
+            <!--android:text="@string/amount"-->
+            <!--android:textAppearance="@style/TextAppearance.AppCompat.Button" />-->
+
+
+            <TextView
+                android:id="@+id/dc_browse_plans"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:gravity="right|end"
+                android:text="Browse Plans"
+                android:textAllCaps="false"
+                android:textColor="@color/colorRedDark"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Amount"/>
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/amount_dc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:inputType="number"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorGray" />
+
+        <TextView
+            android:id="@+id/proceed_to_pay_dc"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/buttonshape"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="@string/proceed_topay"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <!--<android.support.design.widget.TabLayout-->
+        <!--android:id="@+id/tab_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="56dp"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:background="@color/mainTabColor"-->
+        <!--app:tabGravity="center"-->
+        <!--app:tabIndicatorColor="@color/colorWhite"-->
+        <!--app:tabIndicatorHeight="2dp" />-->
+
+</FrameLayout>

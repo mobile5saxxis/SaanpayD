@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/nav_mobile_recharge"
+        android:title="Mobile Recharge" />
+
+
+    <item
+        android:id="@+id/nav_data_card"
+        android:title="Data Card" />
+
+
+    <item
+        android:id="@+id/nav_dth"
+        android:title="DTH" />
+
+
+    <!--<item-->
+    <!--android:id="@+id/nav_my_profile"-->
+    <!--android:title="My Profile" />-->
+
+    <item
+        android:id="@+id/nav_wallet"
+        android:title="My Wallet" />
+
+
+    <item
+        android:id="@+id/nav_scanandpay"
+        android:title="Scan And Pay" />
+
+
+    <item
+        android:id="@+id/nav_water"
+        android:title="Water" />
+
+
+    <item
+        android:id="@+id/nav_gas"
+        android:title="Gas" />
+
+
+    <item
+        android:id="@+id/nav_insurance"
+        android:title="Insurance" />
+
+
+    <item
+        android:id="@+id/nav_bus"
+        android:title="Bus" />
+
+
+    <item
+        android:id="@+id/nav_hotel"
+        android:title="Hotel" />
+
+
+    <!--<item-->
+    <!--android:id="@+id/nav_my_orders"-->
+    <!--android:title="My Orders" />-->
+
+    <!--<item-->
+    <!--android:id="@+id/nav_pay_for_orders"-->
+    <!--android:title="Pay For Orders" />-->
+
+    <!--<item-->
+    <!--android:id="@+id/nav_saved_cards"-->
+    <!--android:title="My Saved Cards " />-->
+
+
+    <!--<item-->
+    <!--android:id="@+id/nav_my_qr_code"-->
+    <!--android:title="Set Pattern" />-->
+
+    <!--<item-->
+    <!--android:id="@+id/nav_refer_earn"-->
+    <!--android:title="Refer &amp; Earn" />-->
+
+    <!--<item-->
+    <!--android:id="@+id/nav_aboutus"-->
+    <!--android:title="About Us" />-->
+    <item
+        android:id="@+id/nav_shareapp"
+        android:title="Share App" />
+    <item
+        android:id="@+id/nav_rateapp"
+        android:title="Rate App" />
+
+    <!--<item-->
+        <!--android:id="@+id/nav_login"-->
+        <!--android:title="@string/login"/>-->
+</menu>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_deposit"
+    tools:context=".activities.payment.DepositActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tipl_deposit_name">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorchange"
+                android:hint="Name"
+                android:textColorHint="@color/colorchange"
+                android:inputType="number"
+                android:id="@+id/deposit_name"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tipl_deposit_mobile">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorchange"
+                android:hint="Mobile no"
+                android:textColorHint="@color/colorchange"
+                android:inputType="number"
+                android:id="@+id/deposit_mobileno"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tipl_deposit_emailadd">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorchange"
+                android:hint="E-mail Address"
+                android:textColorHint="@color/colorchange"
+                android:inputType="number"
+                android:id="@+id/deposit_emailadd"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tipl_deposit_amount">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorchange"
+                android:hint="Amount"
+                android:textColorHint="@color/colorchange"
+                android:inputType="number"
+                android:id="@+id/deposit_amount"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tipl_deposit_address">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorchange"
+                android:hint="Address"
+                android:textColorHint="@color/colorchange"
+                android:inputType="number"
+                android:id="@+id/deposit_address"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tipl_deposit_addlocation">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorchange"
+                android:hint="Add Location"
+                android:textColorHint="@color/colorchange"
+                android:inputType="number"
+                android:id="@+id/deposit_addlocation"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!--<fragment-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:id="@+id/depositmap"-->
+            <!--class="com.google.android.gms.maps.SupportMapFragment"/>-->
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Submit"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:padding="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/buttonshape"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

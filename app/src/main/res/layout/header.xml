@@ -1,0 +1,6 @@
+<ImageView android:layout_width="match_parent"
+    android:layout_height="23dp"
+    android:background="#F37E7F"
+    android:padding="4sp"
+    android:src="@drawable/logo_new"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

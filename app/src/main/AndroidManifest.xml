@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.saxxis.saanpaydestributor">
+
+    <!-- permissions for Network -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:name=".app.MixCartApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="android:theme"
+        tools:replace="android:icon,android:label,android:theme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.atom.mobilepaymentsdk.PayActivity"
+            android:label="@string/app_name" />
+
+        <!-- receivers -->
+        <receiver
+            android:name=".receivers.NetworkChangeListener"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receivers.IncomingSms"
+            android:exported="true"
+            android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter android:priority="999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".services.HttpService" />
+
+        <activity
+            android:name=".activities.main.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.main.LoginMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activities.main.LoginActivity"
+            android:parentActivityName=".activities.main.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saxxis.saanpaydestributor.activities.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.main.SignupActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activities.main.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.recharge.MobileRechargePostpaidActivity"
+            android:label="@string/title_activity_mobile_recharge_postpaid"
+            android:parentActivityName=".activities.main.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saxxis.saanpaydestributor.activities.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.recharge.DthActivity"
+            android:label="@string/title_activity_dth"
+            android:parentActivityName=".activities.main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saxxis.saanpaydestributor.activities.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.leftmenu.HelpContactActivity"
+            android:label="@string/title_activity_help_contact"
+            android:parentActivityName=".activities.main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saxxis.saanpaydestributor.activities.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.leftmenu.AboutUsActivity"
+            android:label="@string/title_activity_about_us"
+            android:parentActivityName=".activities.main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saxxis.saanpaydestributor.activities.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.leftmenu.WalletActivity"
+            android:label="@string/title_activity_wallet"
+            android:parentActivityName=".activities.main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saxxis.saanpaydestributor.activities.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.CompletePaymentActivity"
+            android:label="@string/title_activity_complete_payment"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".activities.OrdersActivity"
+            android:label="@string/title_activity_orders"
+            android:parentActivityName=".activities.main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saxxis.saanpaydestributor.activities.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.TermsConditionsActivity"
+            android:label="@string/title_activity_terms_conditions"
+            android:parentActivityName=".activities.main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saxxis.saanpaydestributor.activities.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.PrivacyPolicyActivity"
+            android:label="@string/title_activity_privacy_policy"
+            android:parentActivityName=".activities.main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saxxis.saanpaydestributor.activities.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.recharge.MobileRechargePrepaidActivity"
+            android:label="Mobile Recharge"
+            android:parentActivityName=".activities.main.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saxxis.saanpaydestributor.activities.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.leftmenu.ReferralActivity"
+            android:label="@string/title_activity_referral"
+            android:parentActivityName=".activities.main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saxxis.saanpaydestributor.activities.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.leftmenu.ProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:parentActivityName=".activities.main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saxxis.saanpaydestributor.activities.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.recharge.BrowsePlansActivity"
+            android:label="@string/title_activity_browse_plans"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.recharge.DataCardActivity"
+            android:label="@string/title_activity_data_card"
+            android:parentActivityName=".activities.main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saxxis.saanpaydestributor.activities.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.CompleteInfoActivity"
+            android:label="Payment Info"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".activities.leftmenu.QRCodeActivity"
+            android:label="@string/title_activity_qrcode"
+            android:parentActivityName=".activities.main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saxxis.saanpaydestributor.activities.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".pattern.SetPatternActivity"
+            android:label="@string/set_pattern_title"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".pattern.ConfirmPatternActivity"
+            android:label="@string/confirm_pattern_title"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activities.payment.ReceiveMoneyActivity"
+            android:label="@string/title_activity_receive_money"
+            android:parentActivityName=".activities.main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saxxis.saanpaydestributor.activities.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.payment.AddMoneyActivity"
+            android:label="Add Money to SaanPay Wallet"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.PaymentSuccessActivity"
+            android:label="@string/title_activity_success"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <data
+                    android:host="@string/hostname"
+                    android:scheme="com.topcharging.android" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.specialities.SpecialityListingActivity"
+            android:label="@string/title_activity_speciality_listing"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saxxis.saanpaydestributor.activities.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.specialities.ProductDetailActivity"
+            android:label="@string/title_activity_product_detail"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.specialities.SpecialityListingActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saxxis.saanpaydestributor.activities.specialities.SpecialityListingActivity" />
+        </activity>
+        <activity
+            android:name=".activities.specialities.CheckoutActivity"
+            android:label="@string/title_activity_checkout"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.payment.SendMoneyActivity"
+            android:label="@string/title_activity_send_money"
+            android:parentActivityName=".activities.main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saxxis.saanpaydestributor.activities.main.MainActivity" />
+        </activity>
+        <activity android:name=".activities.TestActivity" />
+        <activity
+            android:name=".activities.utlity.ElectricityActivity"
+            android:label="Electricity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".activities.utlity.GasActivity"
+            android:label="Gas"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".activities.utlity.WaterActivity"
+            android:label="Water"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".activities.utlity.InsuranceActivity"
+            android:label="Insurance"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".activities.payment.DepositActivity"
+            android:label="Deposit"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activities.payment.PassBookActivity"
+            android:label="Passbook"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".activities.payment.TranBalToBankActivity"
+            android:label="Transfer Balance To Bank"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".activities.main.ForgotPassActivity"
+            android:label="Forgot Password ?"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".activities.reservation.HolidayActivity"
+            android:label="Holiday Packages"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".activities.reservation.HotelsActivity"
+            android:label="Hotels"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".activities.reservation.BusesActivity"
+            android:label="Bus Reservation"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".activities.reservation.FlightActivity"
+            android:label="Flight Reservation"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".activities.leftmenu.ChangePasswordActivity"
+            android:label="Change Password"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".activities.reservation.MoviesActivity"
+            android:label="Movies"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".activities.leftmenu.AddressActivity"
+            android:label="Address"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".activities.leftmenu.WalletPayActivity"
+            android:label="Wallet Pay"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".activities.payment.DetailedPaymentActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".activities.OrderDertailsActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".activities.leftmenu.AddQueryActivity"
+            android:label="Ask? For Help"
+            android:parentActivityName=".activities.leftmenu.HelpContactActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".activities.leftmenu.AddReplyActivity"
+            android:label="Reply"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".activities.payment.DepositTwoActivity"
+            android:label="Deposit"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".activities.CompleteAddMoneyActivity"
+            android:label="Pay To Add"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".activities.payment.LocationPickActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".activities.payment.PaymentResponseActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".activities.payment.KYCUploadActivity"
+            android:label="KYC Upload"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".activities.leftmenu.ReportsActivity"
+            android:label="Reports"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"></activity>
+        <activity
+            android:name=".activities.leftmenu.MoneyDepositActivity"
+            android:label="Money Deposit"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"></activity>
+        <activity android:name=".CommingSoonActivity"></activity>
+    </application>
+
+</manifest>

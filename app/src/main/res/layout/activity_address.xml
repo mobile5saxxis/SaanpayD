@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.saxxis.saanpaydestributor.activities.leftmenu.AddressActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.AppBarLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorchange"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:text="Address :"
+            />
+
+        <com.saxxis.saanpaydestributor.utils.ui.LinedEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGray2"
+            android:lineSpacingExtra="5dp"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:minLines="3"
+            android:lines="3"
+            android:id="@+id/edt_address"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:textSize="16sp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@drawable/buttonshape"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:text="Save"
+            android:id="@+id/save_address"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

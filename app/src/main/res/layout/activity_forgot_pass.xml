@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/coord_forgotpassword"
+    tools:context="com.saxxis.saanpaydestributor.activities.main.ForgotPassActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/forgotpasswordtoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/forgotpassword"
+         android:orientation="vertical">
+
+
+         <android.support.design.widget.TextInputLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:id="@+id/tipl_regdemailid"
+             android:layout_marginLeft="10dp"
+             android:layout_marginTop="10dp"
+             android:layout_marginRight="10dp"
+             android:gravity="center">
+
+             <android.support.design.widget.TextInputEditText
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:inputType="textEmailAddress"
+                 android:hint="Enter Registered Email Id"
+                 android:textColorHint="@color/colorchange"
+                 android:id="@+id/emailforforgotpsd"/>
+
+         </android.support.design.widget.TextInputLayout>
+         <android.support.design.widget.TextInputLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:id="@+id/tipl_regdmobile"
+             android:layout_marginLeft="10dp"
+             android:layout_marginTop="10dp"
+             android:layout_marginRight="10dp"
+             android:gravity="center">
+
+             <android.support.design.widget.TextInputEditText
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:inputType="number"
+                 android:hint="Enter Registered mobile number"
+                 android:textColorHint="@color/colorchange"
+                 android:id="@+id/mobileforforgotpsd"/>
+
+         </android.support.design.widget.TextInputLayout>
+
+
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:padding="10dp"
+             android:layout_marginTop="10dp"
+             android:background="@drawable/buttonshape"
+             android:text="get otp"
+             android:id="@+id/emailsubmit"
+             android:textColor="@color/white"/>
+
+     </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/otplayout"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/tipl_otpnumber"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/new_otp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:inputType="textPassword"
+                    android:layout_gravity="center"
+                    android:maxLength="13"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:hint="new otp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/tipl_newpassword"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/new_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:inputType="textPassword"
+                    android:layout_gravity="center"
+                    android:maxLength="13"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:hint="new password"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/tipl_conf_newpassword"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/confirmnew_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:inputType="textPassword"
+                    android:layout_gravity="center"
+                    android:maxLength="13"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:hint="confirm new password"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="reset"
+                android:id="@+id/resetpassword"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:background="@drawable/buttonshape"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

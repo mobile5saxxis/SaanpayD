@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:text="Book Domestic And International Hotels"
+        android:textColor="@color/colorchange"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="City Hotel or Area" />
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/hotelarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:inputType="text"
+        android:maxLength="13"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColorHint="@color/colorchange"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorGray" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Check-In" />
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/checkin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:inputType="text"
+        android:maxLength="13"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColorHint="@color/colorchange"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorGray" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check-Out"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/checkout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:inputType="text"
+            android:maxLength="13"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColorHint="@color/colorchange"
+            android:textSize="14sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorGray" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rooms Or Guests"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/roomsorguest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:inputType="text"
+            android:maxLength="13"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColorHint="@color/colorchange"
+            android:textSize="14sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorGray" />
+
+
+    <Button
+        android:id="@+id/getbill"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:background="@drawable/buttonshape"
+        android:gravity="center"
+        android:text="Search"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

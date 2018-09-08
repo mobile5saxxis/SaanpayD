@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter OTP"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center_horizontal" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/pin_layout_ipl">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="4"
+            android:id="@+id/pin_layout_et"
+            android:textColor="@color/colorBlueGroup" />
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:id="@+id/pin_layout_submit"/>
+
+</LinearLayout>

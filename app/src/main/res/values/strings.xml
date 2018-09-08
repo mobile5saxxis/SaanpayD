@@ -1,0 +1,154 @@
+<resources>
+    <string name="app_name">SaanPay Business Partner</string>
+
+    <string name="connection_is_available">Connected</string>
+    <string name="connection_is_not_available">No Internet Connection</string>
+    <string name="waiting_for_network">Waiting For Network </string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="login">Login</string>
+    <string name="username">UserName</string>
+    <string name="password">Password</string>
+    <string name="forget_pswd">Forgot Password?</string>
+    <string name="terms_condtns"><![CDATA[Accept Terms & Conditions]]></string>
+    <string name="create_act">New User</string>
+
+
+    <string name="enter_mble_num">Enter Mobile Number</string>
+    <string name="operaters">Select Operator</string>
+    <string name="proceed_topay">Proceed to Recharge</string>
+    <string name="amount">Amount</string>
+    <string name="walletbalanceout">Available Balance &#8377;</string>
+
+
+    <!-- Permissions strings start -->
+    <string name="camera_permission">Camera Permission</string>
+    <string name="audio_permission">Audio Permission</string>
+    <string name="storage_permission">Storage Permission</string>
+    <string name="contacts_permission">Contacts Permission</string>
+    <string name="vibrate_permission">Vibrate Permission</string>
+    <string name="receive_sms_permission">Receive sms Permission</string>
+    <string name="read_sms_permission">Read sms Permission</string>
+    <string name="call_phone_permission">Call Phone Permission</string>
+    <string name="get_accounts_permission">Get accounts Permission</string>
+    <string name="write_sync_settings_permission">Get accounts Permission</string>
+    <string name="read_sync_settings_permission">Get accounts Permission</string>
+    <string name="camera_permission_message">Camera permission allows you to take pictures and capture videos. Please allow in App Settings for additional functionality.</string>
+    <string name="record_audio_permission_message">Record audio permission allows you to  record audios. Please allow in App Settings for additional functionality.</string>
+    <string name="settings_audio_permission_message">Modify audio permission allows us access to your audios. Please allow in App Settings for additional functionality.</string>
+    <string name="write_storage_permission_message">Write External permission allows us  access to your media. Please allow in App Settings for additional functionality.</string>
+    <string name="read_storage_permission_message">Read External permission allows us to read your media. Please allow in App Settings for additional functionality.</string>
+    <string name="read_contacts_permission_message">Read Contacts permission allows us to read your contacts. Please allow in App Settings for additional functionality.</string>
+    <string name="write_contacts_permission_message">Write Contacts permission allows you access to your contacts. Please allow in App Settings for additional functionality.</string>
+    <string name="vibrate_permission_message">Vibrate permission . Please allow in App Settings for additional functionality.</string>
+    <string name="receive_sms_permission_message">Receive sms permission allows you  to receive SMS messages. Please allow in App Settings for additional functionality.</string>
+    <string name="read_sms_permission_message">Read sms permission allows us access to your SMS messages. Please allow in App Settings for additional functionality.</string>
+    <string name="call_phone_permission_message">Call phone permission allows you make calls. Please allow in App Settings for additional functionality.</string>
+    <string name="get_accounts_permission_message">Get accounts permission . Please allow in App Settings for additional functionality.</string>
+    <string name="write_sync_settings_permission_message">Write Sync settings permission . Please allow in App Settings for additional functionality.</string>
+    <string name="read_sync_settings_permission_message">Read Sync settings permission . Please allow in App Settings for additional functionality.</string>
+    <string name="no_thanks">No Thanks</string>
+    <string name="yes">Yes</string>
+
+
+    <!--Permissions strings end -->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="all_orders_fragment">Soon... it Will Update</string>
+    <string name="create_account">Create Account</string>
+    <string name="declaration">I Hereby Certify that I am 18 years of age.</string>
+    <string name="conformed">By Sigining up you agree to our T&amp;C </string>
+    <string name="verify">Verify</string>
+    <string name="privacy">and  Privacy Policy </string>
+
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_mobile_recharge">Mobile Recharge </string>
+    <string name="title_activity_mobile_recharge_prepaid">Mobile Recharge Prepaid</string>
+    <string name="title_activity_mobile_recharge_postpaid">MobileRecharge Postpaid</string>
+    <string name="title_activity_dth">DTH Recharge</string>
+    <string name="title_activity_help_contact">Help &amp; Contact</string>
+    <string name="title_activity_about_us">About Us</string>
+    <string name="title_activity_wallet">Wallet</string>
+    <string name="title_activity_complete_payment">Complete Payment</string>
+    <string name="title_activity_orders">My Orders</string>
+    <string name="title_activity_terms_conditions">Terms &amp; Conditions</string>
+    <string name="title_activity_privacy_policy">Privacy Policy</string>
+    <string name="title_activity_referral">Invite&amp;Earns</string>
+    <string name="title_activity_profile">My Profile</string>
+    <string name="title_activity_browse_plans">Plans</string>
+    <string name="title_activity_data_card">Data Card</string>
+    <string name="title_activity_qrcode">Scan &amp; Pay</string>
+    <string name="title_activity_receive_money">Receive Money</string>
+
+
+    <string name="enter_dth_num">Enter DTH Number</string>
+
+    <string name="rupee_display">Rs %s </string>
+    <string name="negative_rupee_display">- Rs %s </string>
+    <string name="orders">My Orders</string>
+
+
+    <string name="termsandcon">Terms and Conditions are a set of rules and guidelines that a user must agree to in order to use your website or mobile app. It acts as a legal contract between you (the company) who has the website or mobile app and the user who access your website and mobile app.  It’s up to you to set the rules and guidelines that the user must agree to. You can think of your Terms and Conditions agreement as the legal agreement where you maintain your rights to exclude users from your app in the event that they abuse your app, and where you maintain your legal rights against potential app abusers, and so on.  Terms and Conditions are also known as Terms of Service or Terms of Use.  This type of legal agreement can be used for both your website and your mobile app. It’s not required (it’s not recommended actually) to have separate Terms and Conditions agreements: one for your website and one for your mobile app.Terms and Conditions are a set of rules and guidelines that a user must agree to in order to use your website or mobile app. It acts as a legal contract between you (the company) who has the website or mobile app and the user who access your website and mobile app.  It’s up to you to set the rules and guidelines that the user must agree to. You can think of your Terms and Conditions agreement as the legal agreement where you maintain your rights to exclude users from your app in the event that they abuse your app, and where you maintain your legal rights against potential app abusers, and so on.  Terms and Conditions are also known as Terms of Service or Terms of Use.  This type of legal agreement can be used for both your website and your mobile app. It’s not required (it’s not recommended actually) to have separate Terms and Conditions agreements: one for your website and one for your mobile app.</string>
+
+    <string name="prcy_plcy">A Privacy Policy agreement is the agreement where you specify if you collect personal data, what kind of personal data you collect from users and what you do with that data.</string>
+
+    <string name="empty" />
+    <string name="search">Search</string>
+
+    <string name="welcome">Welcome %s</string>
+
+    <string name="payment_failure_message">Transaction has been cancelled</string>
+    <string name="select_picture">Select Picture</string>
+
+    <string name="enter_dc_num">Enter Data Card No</string>
+
+    <string name="Rs">\u20B9 %s</string>
+    <string name="signup">Sign Up</string>
+    <string name="remember_me">Remember me</string>
+    <string name="confirm_pattern_title">Confirm your Unlock Pattern</string>
+    <string name="set_pattern_title">Set Unlock Pattern</string>
+    <string name="pattern_reset">Unlock pattern has been Reset</string>
+    <string name="title_activity_success">Payment Success</string>
+    <string name="hostname">SaanPay</string>
+    <string name="title_activity_speciality_listing">Products</string>
+    <string name="title_activity_product_detail">ProductDetailActivity</string>
+    <string name="add_to_cart">Add To Cart</string>
+    <string name="android_pay">Android Pay</string>
+    <string name="action_cart">Shopping Cart</string>
+    <string name="title_activity_checkout">Checkout</string>
+    <string name="sub_total">Sub Total</string>
+    <string name="continue_shopping">Continue Shopping</string>
+    <string name="checkout">Checkout</string>
+    <string name="remove_from_cart">Remove</string>
+    <string name="product_name">Test</string>
+    <string name="title_activity_send_money">Send Money</string>
+    <string name="aboutus">Welcome to our SAANPAY.in android APP. If you continue to browse and use this App you are agreeing to comply with and be bound by the following terms and conditions of use, which together with our privacy policy govern [business name]\'s relationship with you in relation to this App.  The term \'[business name]\' or \'us\' or \'we\' refers to the owner of the website whose registered office is [address]. Our company registration number is [company registration number and place of registration]. The term \'you\' refers to the user or viewer of our App.</string>
+    <string name="signin">Sign In</string>
+    <string name="register">Register</string>
+    <string name="prepaid">Prepaid</string>
+    <string name="postpaid">PostPaid</string>
+    <string name="walletbalance"><![CDATA[Available Balance &#8377; 0]]></string>
+    <string name="currency">&#8377;</string>
+
+
+    <string name="paymenturl">https://payment.atomtech.in/paynetz/epi/fts</string>
+    <string name="userid">41807</string>
+    <string name="merchantpassword">SAANVI@123</string>
+    <string name="productid">SAANVI</string>
+    <string name="porttno">443</string>
+    <string name="accno">917020058627443</string>
+
+    <!-- mapuprsl -->
+    <string name="SERVER_URL">http://saanpay.com/beta/</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_search">Search Contact</string>
+    <string name="txt_done">DONE</string>
+    <string name="permission_contacts_rationale">permission for contacts</string>
+</resources>

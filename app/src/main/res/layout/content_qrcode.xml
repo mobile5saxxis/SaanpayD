@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.saxxis.saanpaydestributor.activities.leftmenu.QRCodeActivity"
+    tools:showIn="@layout/activity_qrcode">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19sp"
+            android:id="@+id/entermobileno"
+            android:text="Enter Mobile Number"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorchange"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="OR"
+            android:textColor="@color/colorchange"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/mble_opt"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:visibility="gone"
+                android:text="Scan OR Code or Bar Code to Pay Money"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorchange"
+                android:textSize="14sp"
+                android:text="Scan this QR Code"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:textColor="@color/colorchange"
+            android:text="Scan To Receive"/>
+
+        <me.dm7.barcodescanner.zxing.ZXingScannerView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/scanner_view"/>
+
+    </RelativeLayout>
+
+
+    <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="16sp"-->
+        <!--android:id="@+id/et_mn"-->
+        <!--android:inputType="phone"-->
+        <!--android:maxLength="10"-->
+        <!--android:hint="99999999"-->
+        <!--android:textColorHint="@color/colorchange"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:background="@android:color/transparent"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:textColor="@color/colorGray2"/>-->
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:minWidth="100dp"
+        android:background="@color/colorGray"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"/>
+        </LinearLayout>
+</ScrollView>
+
+
+
+
+</LinearLayout>

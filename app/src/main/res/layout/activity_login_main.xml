@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@color/colorWhite"
+    tools:context="com.saxxis.saanpaydestributor.activities.main.LoginMainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome to"
+        android:layout_marginTop="10dp"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorchange"
+        android:id="@+id/welcome"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome"
+        android:layout_marginTop="90dp"
+        android:text="SAAN PAY"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:textColor="@color/colorchange"/>
+
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/welcome"-->
+        <!--android:layout_marginTop="90dp"-->
+        <!--app:srcCompat="@drawable/login_img"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="15dp"
+        android:id="@+id/layout_button"
+        android:orientation="vertical">
+
+
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorchange"
+            android:layout_gravity="center_horizontal"
+            android:minWidth="180dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="false"
+            android:id="@+id/btn_signup"
+            android:text="SignUp" />
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorchange"
+            android:minWidth="180dp"
+            android:textSize="16sp"
+            android:id="@+id/btn_login"
+            android:textAllCaps="false"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/colorWhite"
+            android:text="Login" />
+    </LinearLayout>
+
+</RelativeLayout>
